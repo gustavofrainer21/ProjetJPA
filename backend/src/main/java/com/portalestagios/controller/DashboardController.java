@@ -1,5 +1,6 @@
 package com.portalestagios.controller;
 
+import com.portalestagios.model.Vaga;
 import com.portalestagios.repository.EmpresaRepository;
 import com.portalestagios.repository.EstudanteRepository;
 import com.portalestagios.repository.VagaRepository;

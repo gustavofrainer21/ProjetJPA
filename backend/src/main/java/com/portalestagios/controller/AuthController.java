@@ -2,6 +2,7 @@ package com.portalestagios.controller;
 
 import com.portalestagios.dto.JwtResponse;
 import com.portalestagios.dto.LoginRequest;
+import com.portalestagios.model.Usuario;
 import com.portalestagios.security.JwtUtil;
 import com.portalestagios.security.UserPrincipal;
 import jakarta.validation.Valid;

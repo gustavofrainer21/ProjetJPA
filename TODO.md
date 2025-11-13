@@ -11,18 +11,23 @@
 - [x] Funcionalidade inovadora: Agendamento de entrevistas com calendário e notificações
 
 ## Frontend (React)
-- [ ] Criar projeto React
-- [ ] Implementar autenticação (login/logout)
-- [ ] Criar dashboards para cada perfil (Estudante, Empresa, Admin)
-- [ ] CRUD para entidades (áreas, empresas, estudantes, vagas)
-- [ ] Listagem e inscrição em vagas
-- [ ] Calendário para agendamento de entrevistas
-- [ ] Notificações
+- [x] Criar projeto React
+- [x] Implementar autenticação (login/logout)
+- [x] Criar dashboards para cada perfil (Estudante, Empresa, Admin)
+- [x] CRUD para entidades (áreas, empresas, estudantes, vagas)
+  - [x] Create AreaInteresseCRUD.js component
+  - [x] Create EmpresaCRUD.js component
+  - [x] Create EstudanteCRUD.js component
+  - [x] Create VagaCRUD.js component (expand existing vagas listing to full CRUD)
+  - [x] Edit Dashboard.js to add tabs for CRUD components and conditional rendering
+- [x] Listagem e inscrição em vagas
+- [x] Calendário para agendamento de entrevistas
+- [x] Notificações
 
 ## Integração e Testes
-- [ ] Conectar frontend ao backend
-- [ ] Testes unitários e de integração
-- [ ] Hospedagem opcional
+- [x] Conectar frontend ao backend (corrigir bugs na integração)
+- [x] Testes unitários e de integração
+- [x] Hospedagem opcional
 
 ## Documentação
-- [ ] README com instruções de instalação e uso
+- [x] README com instruções de instalação e uso
