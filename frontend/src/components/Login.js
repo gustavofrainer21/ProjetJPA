@@ -3,16 +3,16 @@ import { TextField, Button, Container, Typography, Box, Alert } from '@mui/mater
 import axios from 'axios';
 
 const Login = ({ onLogin }) => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
   const [error, setError] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8080/api/auth/signin', {
-        username,
-        password,
+      const response = await axios.post('http://localhost:8080/api/auth/login', {
+        email,
+        senha,
       });
       localStorage.setItem('token', response.data.token);
       onLogin(response.data);
@@ -32,25 +32,25 @@ const Login = ({ onLogin }) => {
             margin="normal"
             required
             fullWidth
-            id="username"
-            label="Username"
-            name="username"
-            autoComplete="username"
+            id="email"
+            label="Email"
+            name="email"
+            autoComplete="email"
             autoFocus
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <TextField
             margin="normal"
             required
             fullWidth
-            name="password"
-            label="Password"
+            name="senha"
+            label="Senha"
             type="password"
-            id="password"
+            id="senha"
             autoComplete="current-password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
           />
           {error && <Alert severity="error">{error}</Alert>}
           <Button
